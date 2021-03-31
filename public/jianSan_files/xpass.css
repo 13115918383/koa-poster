@@ -1,0 +1,55 @@
+/*!
+ * XSJ xpass signin && signup dialog ui stylesheet
+ * 2014-11-16
+ */
+
+#xsj-xpass { margin:0 auto; padding:10px 20px; width:480px; text-align:center; display:block; overflow:hidden;  box-sizing: content-box;}
+#xsj-xpass *{ box-sizing: content-box;}
+#xsj-xpass .s-tabs { margin:0 auto 20px; padding:0; width:380px; height:32px; line-height:32px; text-align:center; display:block; }
+#xsj-xpass .s-tabs span { margin:0; padding:0; width:180px; height:32px; display:inline-block; }
+#xsj-xpass .s-tabs a { margin:0; padding:0; width:180px; height:30px; line-height:30px; text-align:center; color:#999; font-size:14px; font-weight:bold; text-decoration:none; border-bottom:2px solid #999; display:inline-block; }
+#xsj-xpass .s-tabs a.active { height:30px; line-height:30px; color:#4e6fa9; border-bottom:2px solid #4e6fa9; }
+#xsj-xpass .s-tabs a:hover { color:#666; text-decoration:none; }
+#xsj-xpass .i-items { margin:0 auto; padding:0; width:400px; text-align:center; display:block; }
+#xsj-xpass .i-line-l { margin:0; padding:4px 0 4px 100px; _width:300px; text-align:left; display:block; position:relative; }
+#xsj-xpass .i-line-l .i-ipt-tips { margin:0; padding:0; height:18px; line-height:18px; color:#666; font-size:13px; display:block; overflow:hidden; background:url(images/icon.png) -9999px -9999px no-repeat; }
+#xsj-xpass .i-line-l .i-tip { padding-left:20px; color:#666; background-position:0 -26px; }
+#xsj-xpass .i-line-l .i-err { padding-left:20px; color:#b12719; background-position:0 0; }
+#xsj-xpass .i-line-l .i-suc { padding-left:20px; color:#4e6f05; background-position:0 -52px; }
+#xsj-xpass .i-line-l .i-txt, #xsj-xpass .vcode-box .i-txt { margin:0; padding:0; width:100px; height:36px; line-height:36px; color:#666; font-size:12px; font-weight:bold; text-align:right; display:inline-block; position:absolute; left:0; top:4px; }
+#xsj-xpass .i-line-l .i-txt-get-code { margin:0; padding:0; display: inline-block; *display: inline; *zoom:1; width:100px; height:34px; line-height:34px; color:#fff; font-size:12px; background: #4e6fa9; text-align: center; cursor: pointer;  }
+#xsj-xpass .i-line-l .i-txt-get-code-gray {background: gray; display: none;  }
+#xsj-xpass .i-line-l .sv-txt { margin:0; padding:0; width:80px; height:36px; line-height:36px; color:#666; font-size:12px; font-weight:bold; text-align:left; display:inline-block; position:absolute; left:326px; top:4px; }
+#xsj-xpass .i-line-l .sv-txt a { color:#991b0e; text-decoration:underline; }
+#xsj-xpass .i-line-l .sv-txt a:hover { color:#b12719; text-decoration:underline; }
+#xsj-xpass .sin_t_sup, #xsj-xpass .sin_t_sup:hover { color: #991b0e;text-decoration: underline; font-weight: 700}
+#xsj-xpass .i-jizhi-wrap .i-txt, #xsj-xpass .vcode-box .i-jizhi-wrap .i-txt { height: 44px; line-height: 44px; }
+#xsj-xpass .geetest_holder.geetest_wind { min-width: 214px;}
+#xsj-xpass .vcode-box { height: 54px; margin: 0; _width: 300px;text-align: left;
+    display: block; position: relative;}
+#xsj-xpass .i-jizhi-login-box { height: 44px; line-height: 44px;}
+#xsj-xpass input, #xsj-xpass select, #xsj-xpass button, #xsj-xpass label { vertical-align:middle; }
+#xsj-xpass img { vertical-align:middle; }
+#xsj-xpass img.v_code { margin:0; padding:0; display: inline; width:90px; height:30px; cursor:pointer; }
+#xsj-xpass input.txt-i { margin:0 0 4px; padding:2px 6px; width:200px; height:28px; line-height:28px; color:#333; font-size:13px; border:1px solid #999; background:#fff; }
+#xsj-xpass input.vcode-i { margin-right:5px; width:96px; }
+#xsj-xpass input:hover { border:1px solid #666; }
+#xsj-xpass input:focus { border:1px solid #4e6fa9; }
+#xsj-xpass .i-button-l { margin:0; padding:20px 0 15px 100px; height:44px; text-align:left; display:block; }
+#xsj-xpass button.op-btn { margin:0; padding:0; width:200px; height:44px; text-align:center; color:#fff; font-size:18px; font-weight:bold; cursor:pointer; border:none; background:url(images/button.jpg) center top no-repeat; }
+#xsj-xpass .t-signup-more-info { margin:0 auto; padding:4px 0 4px 16px; width:330px; height:22px; line-height:22px; text-align:left; color:#1a273a; font-size:13px; font-weight:bold; display:block; background:url(images/sec.png) 0 8px no-repeat; }
+#xsj-xpass .t-signup-more-info a { color:#1a273a; text-decoration:underline; }
+#xsj-xpass .t-signup-more-info a:hover { color:#1a273a; text-decoration:none; }
+#xsj-xpass .t-signup-more-items { margin:0; padding:0; display:block; }
+#xsj-xpass .i-n-tips { margin:0; padding:0 0 4px 100px; height:18px; line-height:18px; text-align:left; color:#666; font-size:13px; display:block; position: relative; }
+#xsj-xpass .i-n-tips .find-pass{ position: absolute; left: 230px; top: 0; font-size: 13px; line-height: 18px; display: none; }
+#xsj-xpass .i-n-tips .find-pass a{ color: #1a273a; text-decoration: underline; }
+#xsj-xpass .i-n-tips .i-n-tips-txt { margin:0; padding:0; height:18px; line-height:18px; color:#666; font-size:13px; display:block; overflow:hidden; background:url(images/icon.png) -9999px -9999px no-repeat; }
+#xsj-xpass .i-n-tips .i-tip { padding-left:20px; color:#666; background-position:0 -26px; }
+#xsj-xpass .i-n-tips .i-err { padding-left:20px; color:#b12719; background-position:0 0; }
+#xsj-xpass .i-n-tips .i-suc { padding-left:20px; color:#4e6f05; background-position:0 -52px; }
+#xsj-xpass .i-agreement-i { margin:0; padding:0 0 0 100px; height:42px; text-align:left; color:#333; font-size:12px; display:block; overflow:hidden; }
+#xsj-xpass .i-agreement-i .sup_agreement { margin-right:4px; }
+#xsj-xpass .i-agreement-i p { margin:0; padding:0; height:22px; line-height:22px; display:block; }
+#xsj-xpass .i-agreement-i a { color:#1a273a; text-decoration:underline; }
+#xsj-xpass .i-agreement-i a:hover { color:#1a273a; text-decoration:none; }

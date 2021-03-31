@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div  id="app">
+   <div>
+       <button @click="getPoster">生成海报</button>
+       <div>
+           <img :src="poster" style="width: 100%;height: auto" alt="">
+       </div>
+   </div>
+
+    <div>
+        <button @click="getPdf">生成pdf</button>
+    </div>
+</div>
+
+<script src="js/vue.js"></script>
+<script src="js/axios.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data(){
+            return {
+                poster: ''
+            }
+        },
+        methods: {
+          async  getPoster(){
+                const res = await axios.get('http://localhost:8090/poster/create')
+                const {data,status} = res
+              console.log(data);
+              this.poster = data.data
+          },
+            async  getPdf(){
+                const res = await axios.get('http://localhost:8090/pdf/create')
+                const {data,status} = res
+                console.log(data);
+                window.open(data.data)
+                // this.poster = data.data
+            }
+        }
+    })
+</script>
+</body>
+</html>

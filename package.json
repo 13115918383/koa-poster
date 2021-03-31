@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "海报生成",
+  "main": "main.js",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "bufferutil": "^4.0.1",
+    "cross-env": "^7.0.3",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "puppeteer": "^7.0.1",
+    "puppeteer-chromium-resolver": "^5.2.0",
+    "utf-8-validate": "^5.0.2"
+  },
+  "scripts": {
+    "pro": "cross-env NODE_ENV=production pm2 start main.js",
+    "pro-r": "cross-env NODE_ENV=production pm2 restart main.js",
+    "dev": "cross-env NODE_ENV=development  pm2 start  main.js",
+    "dev-r": "cross-env NODE_ENV=development  pm2 restart main.js"
+  },
+  "author": "野狐凌",
+  "license": "ISC"
+}
